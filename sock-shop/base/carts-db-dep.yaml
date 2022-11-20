@@ -35,7 +35,7 @@ spec:
           name: tmp-volume
       volumes:
         - name: tmp-volume
-          emptyDir:
-            medium: Memory
+          persistentVolumeClaim:
+            claimName: cart-pv-claim
       nodeSelector:
         beta.kubernetes.io/os: linux
