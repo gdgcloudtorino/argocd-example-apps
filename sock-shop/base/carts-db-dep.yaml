@@ -36,6 +36,6 @@ spec:
       volumes:
         - name: tmp-volume
           persistentVolumeClaim:
-            claimName: task-pv-claim
+            claimName: cart-pv-claim
       nodeSelector:
         beta.kubernetes.io/os: linux
